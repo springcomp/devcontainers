@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+  workspace:
+    image: mcr.microsoft.com/azure-functions/dotnet:3.0-dotnet3-core-tools
+    volumes:
+      - ./:/workspace:cached
+    ports:
+      - "7071:7071"
+    depends_on:
+      - "storage-emulator"
+
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+  storage-emulator:
+    image: mcr.microsoft.com/azure-storage/azurite
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+      - "10002:10002"
+    volumes:
+      - azurite:/data
+
+volumes:
+  azurite: {}
