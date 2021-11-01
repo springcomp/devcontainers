@@ -5,3 +5,4 @@ This repository contains a set of [devcontainer](https://code.visualstudio.com/d
 ## Available devcontainers
 
 - [Azure Functions](azure-functions/) (.net core 3.1)
+- [CosmosDb](cosmos-db/) (.net core 3.1)
