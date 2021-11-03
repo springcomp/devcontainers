@@ -6,3 +6,4 @@ This repository contains a set of [devcontainer](https://code.visualstudio.com/d
 
 - [Azure Functions](azure-functions/) (.net core 3.1)
 - [CosmosDb](cosmos-db/) (.net core 3.1)
+- [Helm Templating Framework](helm/) (pwsh 7.1)
