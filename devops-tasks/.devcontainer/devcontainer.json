@@ -1,0 +1,19 @@
+{
+	"dockerComposeFile": [ "../docker-compose.yaml" ],
+	"service": "workspace",
+	"workspaceFolder": "/workspace",
+	"postStartCommand": "/workspace/.devcontainer/post-start.sh",
+	"shutdownAction": "stopCompose",
+
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"ms-vscode.powershell",
+		"ms-vscode.vscode-typescript-next",
+		"ms-vscode.vscode-typescript-tslint-plugin"
+	],
+	"forwardPorts": [],
+    "settings": {
+    	"terminal.integrated.defaultProfile.linux": "pwsh",
+    	"terminal.integrated.profiles.linux": { "pwsh": { "path": "pwsh" } }
+    }
+}
