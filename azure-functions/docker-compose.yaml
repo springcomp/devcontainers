@@ -8,11 +8,11 @@ services:
     ports:
       - "7071:7071"
     depends_on:
-      - "storage-emulator"
+      - "azurite"
 
     command: /bin/sh -c "while sleep 1000; do :; done"
 
-  storage-emulator:
+  azurite:
     image: mcr.microsoft.com/azure-storage/azurite
     ports:
       - "10000:10000"
