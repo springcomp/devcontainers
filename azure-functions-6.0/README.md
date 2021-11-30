@@ -1,7 +1,7 @@
-# Azure Functions (.NET Core 3.1)
+# Azure Functions (.NET 6.0)
 
 This devcontainer definition enables development of an Azure Function App
-using .NET Core 3.1. It includes a running local storage emulator using
+using [.NET 6.0](https://devblogs.microsoft.com/dotnet/announcing-net-6/) and [Azure Functions Core Tools v4](https://azure.microsoft.com/fr-fr/updates/generally-available-azure-functions-runtime-40/). It includes a running local storage emulator using
 [Azurite](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azurite?tabs=visual-studio).
 
 ## Usage
