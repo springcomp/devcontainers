@@ -1,0 +1,27 @@
+version: "2"
+
+services:
+  workspace:
+    build:
+      context: ./.devcontainer
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/workspace:cached
+    ports:
+      - "7071:7071"
+    depends_on:
+      - "azurite"
+
+    command: /bin/sh -c "while sleep 1000; do :; done"
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+      - "10002:10002"
+    volumes:
+      - azurite:/data
+
+volumes:
+  azurite: {}
