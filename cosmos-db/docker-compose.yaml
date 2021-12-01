@@ -22,6 +22,8 @@ services:
       - "10253:10253"
       - "10254:10254"
       - "10255:10255"
+    volumes:
+      - "cosmosdb:/tmp/cosmos/appdata/"
     environment:
       AZURE_COSMOS_EMULATOR_PARTITION_COUNT: "3"
       AZURE_COSMOS_EMULATOR_ENABLE_DATA_PERSISTENCE: "true"
